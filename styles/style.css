@@ -4,9 +4,7 @@
   margin: 0;
   padding: 0;
 }
-header{
-  border: 1px solid rgb(85, 4, 4);
-}
+
 .inter-basic-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -49,6 +47,9 @@ header{
 .color-primary{
     color: rgba(230, 83, 60, 1)
 }
+header{
+  padding-top: 30px;
+}   
 nav > h3{
     font-size: 2.25rem;
     font-weight: bolder;
@@ -172,6 +173,7 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+
 .tutorial h1 {
   font-size: 24px;
   font-weight: 900;
@@ -186,14 +188,134 @@ button {
 .tutorial p {
  margin-top: 5px;
  color: rgba(255, 255, 255, 0.5);
-  text-align: left;
+text-align: center;
   
 }
 .circle{
-  position: relative;
   width: 40px;
   height: 40px;
   background-color: #ff5733;
   border-radius: 50%;
   
+}
+.habit{
+  width: 1044px;
+ height: 550px;
+ margin: 0 auto;
+ /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);  */
+}
+.habit-title{
+  color: #fff;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding-top: 40px;
+}
+.habit-subtitle{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 25px 0px;
+  font-size: 14px;
+ font-weight: 400;
+ line-height: 24px;
+ max-width: 640px;
+ margin: 0 auto;
+ margin-bottom: 20px;
+  
+}
+.habit-items{
+  display: flex;
+  /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+  /* justify-content: space-around; */
+  gap: 40px;
+  
+}
+.habit-item img {
+  width: 230px;
+  height: 200px ;
+  border-radius: 50%;
+  /* border: 3px solid rgba(255, 255, 255, 0.5); */
+}
+.habit-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+.habit-item p {
+  font-size: 0.9em;
+  color: #bbb;
+  text-align: center;
+  margin-top: 12px;
+}
+.bg-2{
+  background-color: black;
+}
+/* Responsive Part */
+@media screen and (max-width: 576px) {
+  *{
+    margin: .4rem;
+  }
+  .nav-links{
+    display: none;
+  }
+  .bars{
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .navbar{
+    margin: 1rem;
+  }
+  .banner-container,.habit-items{
+  
+    flex-direction: column;
+    
+  }
+  .habit{
+    max-width: 576px;
+    margin: 0 auto;
+  }
+  .habit-subtitle{
+    width: 500px;
+  }
+  .habit-item{
+   margin: 0 auto;
+  }
+  /* .habit-item p,h3{
+    margin: 0px;
+  } */
+
+    .text h1, p{
+    width: 330px;
+  } 
+  .text {
+    max-width: 100%;
+    margin: 1rem;
+    
+  }
+.circle{
+  position: absolute;
+  left: 10px;
+
+} 
+.tutorial h1{
+  position:absolute;
+  top: 10px;
+  left: 70px;
+}
+.tutorial p{
+  position: absolute;
+  top: 60px;
+  left: -40px;
+}
+  
+.text h1 {
+  font-size: 3.5rem;
+} 
+ button{
+  font-size: 1.1rem;
+  padding: 18px 25px;
+} 
 }
